@@ -47,7 +47,7 @@
 }
 
 #pragma Mark  - IBAction Button Methods
-
+//method for the selecting the from and to button
 -(IBAction)convertButtonClicked:(id)sender
 {
     if ([self.fromButton.currentTitle isEqualToString:@"From"] ||  [self.toButton.currentTitle isEqualToString:@"To"] ||  !self.currencyTextField.text.length>0) {
@@ -91,6 +91,8 @@
     
 
 }
+
+// method for the convert button event
 - (IBAction)selectClicked:(id)sender {
     NSArray * arr = [[NSArray alloc] init];
     arr = _currencyUniq;
